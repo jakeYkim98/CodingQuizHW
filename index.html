@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <div class="highscores"><a href="highscores.html"></a>View Highscores</div>
+    <div class="timer">Time(s): <span id="seconds-left">120</span></div>
+    
+    <div class="container">
+        <div id="home" class="flex-column flex-center">
+            <h1>Answer the following questions!</h1>
+            <p>
+                Complete the quiz in under 2 minutes. Wrong answers penalize time by 10 seconds.
+            </p>
+            <button id="startBtn">Begin</button>
+        </div>
+    </div>
+    <div class="container quiz">
+        <div id="quizQuestions1" class="hide flex-column flex-center">
+            <h2 id="quizQuestions-title1"></h2>
+                <div id="quizChoices1">
+                
+                    <button id= "input" class="choice1" onclick="wrongInput1()"></button> <br>
+                
+                    <button id= "input" class="choice2" onclick="correctInput1()"></button> <br>
+                
+                    <button id= "input" class="choice3" onclick="wrongInput1()"></button> <br>
+                
+                    <button id= "input" class="choice4" onclick="wrongInput1()"></button> <br>
+                </div>
+                <h3 id="feedback"></h3>
+        </div>
+
+        <div id="quizQuestions2" class="hide flex-column flex-center">
+            <h2 id="quizQuestions-title2"></h2>
+                <div id="quizChoices2">
+                
+                    <button id= "input" class="choice1" onclick="correctInput2()"></button> <br>
+                
+                    <button id= "input" class="choice2" onclick="wrongInput2()"></button> <br>
+                
+                    <button id= "input" class="choice3" onclick="wrongInput2()"></button> <br>
+                
+                    <button id= "input" class="choice4" onclick="wrongInput2()"></button> <br>
+                </div>
+                <h3 id="feedback"></h3>
+        </div>
+    </div>
+    
+    <script src="./assets/script.js"></script>
+</body>
+</html>
