@@ -9,47 +9,102 @@
 </head>
 
 <body>
-    <div class="highscores"><a href="highscores.html"></a>View Highscores</div>
-    <div class="timer">Time(s): <span id="seconds-left">120</span></div>
+    <div class="grades"><a href="grades.html">See Scores</a></div>
+    <div class="timer">Time: <span id="seconds-left">90</span>(s)</div>
     
     <div class="container">
         <div id="home" class="flex-column flex-center">
             <h1>Answer the following questions!</h1>
             <p>
-                Complete the quiz in under 2 minutes. Wrong answers penalize time by 10 seconds.
+                Complete the quiz in under 2 minutes. Wrong answers penalize time by 15 seconds.
             </p>
             <button id="startBtn">Begin</button>
         </div>
     </div>
-    <div class="container quiz">
-        <div id="quizQuestions1" class="hide flex-column flex-center">
+    <div class="quiz">
+        <div id="quizQuestions1" class="hide">
             <h2 id="quizQuestions-title1"></h2>
-                <div id="quizChoices1">
+                <div id="quizChoices" class="buttonalign">
                 
-                    <button id= "input" class="choice1" onclick="wrongInput1()"></button> <br>
+                    <button id= "input1" class="choice01" onclick="wrongInput1()"></button> <br>
                 
-                    <button id= "input" class="choice2" onclick="correctInput1()"></button> <br>
+                    <button id= "input1" class="choice02" onclick="correctInput1()"></button> <br>
                 
-                    <button id= "input" class="choice3" onclick="wrongInput1()"></button> <br>
+                    <button id= "input1" class="choice03" onclick="wrongInput1()"></button> <br>
                 
-                    <button id= "input" class="choice4" onclick="wrongInput1()"></button> <br>
+                    <button id= "input1" class="choice04" onclick="wrongInput1()"></button> <br>
                 </div>
-                <h3 id="feedback"></h3>
         </div>
 
-        <div id="quizQuestions2" class="hide flex-column flex-center">
+        <div id="quizQuestions2" class="hide">
             <h2 id="quizQuestions-title2"></h2>
-                <div id="quizChoices2">
+                <div id="quizChoices" class="buttonalign">
                 
-                    <button id= "input" class="choice1" onclick="correctInput2()"></button> <br>
+                    <button id= "input2" class="choice11" onclick="correctInput2()"></button> <br>
                 
-                    <button id= "input" class="choice2" onclick="wrongInput2()"></button> <br>
+                    <button id= "input2" class="choice12" onclick="wrongInput2()"></button> <br>
                 
-                    <button id= "input" class="choice3" onclick="wrongInput2()"></button> <br>
+                    <button id= "input2" class="choice13" onclick="wrongInput2()"></button> <br>
                 
-                    <button id= "input" class="choice4" onclick="wrongInput2()"></button> <br>
+                    <button id= "input2" class="choice14" onclick="wrongInput2()"></button> <br>
                 </div>
-                <h3 id="feedback"></h3>
+        </div>
+
+        <div id="quizQuestions3" class="hide">
+            <h2 id="quizQuestions-title3"></h2>
+                <div id="quizChoices" class="buttonalign">
+                
+                    <button id= "input3" class="choice21" onclick="wrongInput3()"></button> <br>
+                
+                    <button id= "input3" class="choice22" onclick="wrongInput3()"></button> <br>
+                
+                    <button id= "input3" class="choice23" onclick="wrongInput3()"></button> <br>
+                
+                    <button id= "input3" class="choice24" onclick="correctInput3()"></button> <br>
+                </div>
+        </div>
+
+        <div id="quizQuestions4" class="hide">
+            <h2 id="quizQuestions-title4"></h2>
+                <div id="quizChoices" class="buttonalign">
+                
+                    <button id= "input4" class="choice31" onclick="wrongInput4()"></button> <br>
+                
+                    <button id= "input4" class="choice32" onclick="wrongInput4()"></button> <br>
+                
+                    <button id= "input4" class="choice33" onclick="correctInput4()"></button> <br>
+                
+                    <button id= "input4" class="choice34" onclick="wrongInput4()"></button> <br>
+                </div>
+        </div>
+
+        <div id="quizQuestions5" class="hide">
+            <h2 id="quizQuestions-title5"></h2>
+                <div id="quizChoices" class="buttonalign">
+                
+                    <button id= "input5" class="choice41" onclick="wrongInput5()"></button> <br>
+                
+                    <button id= "input5" class="choice42" onclick="wrongInput5()"></button> <br>
+                
+                    <button id= "input5" class="choice43" onclick="wrongInput5()"></button> <br>
+                
+                    <button id= "input5" class="choice44" onclick="correctInput5()"></button> <br>
+                </div>
+        </div>
+
+        <div id="feedbackStyle">
+            <p>
+                <div id="feedback"></div>
+            </p>
+        </div>
+
+        <div id="quizComplete" class="hide">
+            <h2 id="endMessage">Quiz Completed!</h2>
+            <p>You got a <span id="score"></span>!</p>
+            <p>Sign your name!
+                <input type="text" id="signature">
+                <button id="submit">Submit</button>
+            </p>
         </div>
     </div>
     
